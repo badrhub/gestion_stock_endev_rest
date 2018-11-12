@@ -64,7 +64,12 @@ public class CommandeFournisseur  implements Serializable{
 	}
 
 	public CommandeFournisseur() {
+		
+	}
+
+	public CommandeFournisseur(Date dateCommande) {
 		super();
+		this.dateCommande = dateCommande;
 	}
 	
 	

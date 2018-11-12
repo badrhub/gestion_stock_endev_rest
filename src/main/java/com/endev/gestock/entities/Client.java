@@ -84,6 +84,15 @@ public class Client implements Serializable{
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	public Client(String nom, String prenom, String address, String photo, String email) {
+		
+		this.nom = nom;
+		this.prenom = prenom;
+		this.address = address;
+		this.photo = photo;
+		this.email = email;
+	}
 	
 	
 	

@@ -76,7 +76,13 @@ public class CommandeClient  implements Serializable{
 	}
 
 	public CommandeClient() {
-		super();
+		
+	}
+
+	public CommandeClient(String code, Date dateCommande) {
+		
+		this.code = code;
+		this.dateCommande = dateCommande;
 	}
 	
 	

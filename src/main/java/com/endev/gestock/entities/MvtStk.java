@@ -76,7 +76,15 @@ public class MvtStk implements Serializable{
 	}
 
 	public MvtStk() {
+		
+	}
+
+	public MvtStk(Long idMvtStk, Date dateMvt, BigDecimal qte, int typeMvt) {
 		super();
+		this.idMvtStk = idMvtStk;
+		this.dateMvt = dateMvt;
+		this.qte = qte;
+		this.typeMvt = typeMvt;
 	}
 	
 	

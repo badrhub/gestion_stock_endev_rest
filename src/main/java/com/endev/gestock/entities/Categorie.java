@@ -64,6 +64,12 @@ public class Categorie implements Serializable{
 		
 	}
 
+	public Categorie(String code, String designation) {
+		
+		this.code = code;
+		this.designation = designation;
+	}
+
 	
 
 	

@@ -83,6 +83,15 @@ public class Fournisseur implements Serializable{
 	public Fournisseur() {
 		
 	}
+
+	public Fournisseur(String nom, String prenom, String address, String photo, String email) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.address = address;
+		this.photo = photo;
+		this.email = email;
+	}
 	
 	
 	

@@ -73,7 +73,16 @@ public class Utilisateur implements Serializable{
 	}
 
 	public Utilisateur() {
-		super();
+		
+	}
+
+	public Utilisateur(String nom, String prenom, String email, Long motDePass, String photo) {
+		
+		this.nom = nom;
+		this.prenom = prenom;
+		this.email = email;
+		this.motDePass = motDePass;
+		this.photo = photo;
 	}
 	
 	

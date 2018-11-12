@@ -62,6 +62,13 @@ public class Vente implements Serializable{
 	public Vente() {
 		super();
 		}
+
+	public Vente(String code, Date dateVente, List<LigneVente> ligneVentes) {
+		
+		this.code = code;
+		this.dateVente = dateVente;
+		this.ligneVentes = ligneVentes;
+	}
 	
 	
 }

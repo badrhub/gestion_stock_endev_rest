@@ -23,11 +23,11 @@ public class Article implements Serializable{
 	
 	private String designation;
 	
-    private BigDecimal prixUnitaireHT;
+    private double prixUnitaireHT;
     
-    private BigDecimal tauxTva;
+    private double tauxTva;
     
-    private BigDecimal prixUnitaireTTC;
+    private double prixUnitaireTTC;
     
     private String photo;
     
@@ -65,27 +65,27 @@ public class Article implements Serializable{
 		this.designation = designation;
 	}
 
-	public BigDecimal getPrixUnitaireHT() {
+	public double getPrixUnitaireHT() {
 		return prixUnitaireHT;
 	}
 
-	public void setPrixUnitaireHT(BigDecimal prixUnitaireHT) {
+	public void setPrixUnitaireHT(double prixUnitaireHT) {
 		this.prixUnitaireHT = prixUnitaireHT;
 	}
 
-	public BigDecimal getTauxTva() {
+	public double getTauxTva() {
 		return tauxTva;
 	}
 
-	public void setTauxTva(BigDecimal tauxTva) {
+	public void setTauxTva(double tauxTva) {
 		this.tauxTva = tauxTva;
 	}
 
-	public BigDecimal getPrixUnitaireTTC() {
+	public double getPrixUnitaireTTC() {
 		return prixUnitaireTTC;
 	}
 
-	public void setPrixUnitaireTTC(BigDecimal prixUnitaireTTC) {
+	public void setPrixUnitaireTTC(double prixUnitaireTTC) {
 		this.prixUnitaireTTC = prixUnitaireTTC;
 	}
 
@@ -103,6 +103,17 @@ public class Article implements Serializable{
 
 	public void setCategorie(Categorie categorie) {
 		this.categorie = categorie;
+	}
+
+	public Article(String codeArticle, String designation, double d, double e,
+			double f, String photo) {
+		super();
+		CodeArticle = codeArticle;
+		this.designation = designation;
+		this.prixUnitaireHT = d;
+		this.tauxTva = e;
+		this.prixUnitaireTTC = f;
+		this.photo = photo;
 	}
 	
 	
